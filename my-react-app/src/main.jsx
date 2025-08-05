@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Error from './pages/error/index.jsx'
-import Header from './components/Header/index.jsx'
-import Informations from './pages/informations/index.jsx'
+import Error from './pages/error/Error.jsx'
+import Header from './components/Header/Header.jsx'
+import Informations from './pages/informations/Info.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import './index.css'
 import App from './App.jsx'
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="*" element={<Error />} />
                 <Route path="/Informations" element={<Informations />} />
             </Routes>
+      <Footer />
     </Router>
     
   </StrictMode>,
