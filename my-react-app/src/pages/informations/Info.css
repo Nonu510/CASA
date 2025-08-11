@@ -1,65 +1,74 @@
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1240px;
-    margin: 20px 100px;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 100px;
+  gap: 30px;
 }
-
+@media screen and (max-width: 768px) {
+  .info {
+    margin: 20px;
+  }
+}
 .info img {
-    width: 100%;
-    height: 223px;
-    border-radius: 25px;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  filter: brightness(0.7);
 }
 
 .rules {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
-
+@media screen and (max-width: 768px) {
+  .rules {
+    width: 100%;
+  }
+}
 .rules h2 {
-    padding: 15px;
-    background: rgba(255, 96, 96, 1);
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px 15px;
+  background: rgb(255, 96, 96);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
 }
 
 .content-definition {
-    display: none;
-    padding: 10px;
-    background: rgba(246, 246, 246, 0.45);
-    border-radius: 5px;
-    font-size: 18px;
-    animation: fadeIn 0.3s ease-in-out;
+  display: none;
+  padding: 10px;
+  background: rgba(246, 246, 246, 0.45);
+  border-radius: 5px;
+  font-size: 18px;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .content-definition.open {
-    display: block;
+  display: block;
 }
 
 .arrow {
-    transition: transform 0.3s ease;
-    margin-left: 10px;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  margin-left: 10px;
 }
-
 .arrow.open {
-    transform: rotate(-180deg);
+  transform: rotate(0deg);
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Info.css.map */

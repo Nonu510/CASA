@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/LOGOgrand.png'
+import logop from '../../assets/LOGOpetit.png'
 import './Header.css'
 
 function Header() {
     return (
         <div className='header'>
-            <img src={logo} alt="logo" />
+            <img className="logog" src={logo} alt="logo" />
+            <img className="logop" src={logop} alt="logop" />
             <nav>
                 <NavLink 
                     to="/" 

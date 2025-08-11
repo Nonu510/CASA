@@ -1,14 +1,14 @@
 body {
-    margin: auto;
-    font-family: "Monserrat", sans-serif;
-    box-sizing: border-box;
-    max-width: 1440px;
+  margin: auto;
+  font-family: "Montserrat", serif;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 img {
-    object-fit: cover;
-}
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=index.css.map */
