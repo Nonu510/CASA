@@ -3,5 +3,8 @@
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^0.2.3",
     "react-router-dom": "6.10.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.90.0"
   }
 }

@@ -2,16 +2,19 @@ import './App.css'
 import mer from './assets/Image_appartement.png'
 import Card from "./components/Card/Card";
 import apartments from "../src/assets/data/appartement.json";
+import Banner from "../src/components/Banner/Banner";
 import { Link } from 'react-router-dom';
 
 
 
 function App() {
   return (
-    <>
-    <div className='banner'>
-      <img src={mer} alt="mer" />
-      <p>Chez vous, partout et ailleurs</p>
+    <> 
+    <div className='bannerapp'>   
+      <Banner
+        image={mer}
+        title="Chez vous, partout et ailleurs"
+      />
     </div>
     <section className="cards-container">
       {apartments.map((apt) => (
