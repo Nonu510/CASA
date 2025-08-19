@@ -11,4 +11,12 @@ a {
 img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */
