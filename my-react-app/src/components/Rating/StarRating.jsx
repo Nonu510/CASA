@@ -12,7 +12,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
           size={20}
           color={
             index < roundedRating
-              ? "rgba(255, 96, 96, 1)" 
+              ? "var(--main-color)" 
               : "rgba(227, 227, 227, 1)" 
           }
         />

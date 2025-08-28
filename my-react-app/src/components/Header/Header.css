@@ -50,6 +50,7 @@
 @media screen and (max-width: 768px) {
   .nav-link {
     margin: 0;
+    text-transform: uppercase;
   }
 }
 

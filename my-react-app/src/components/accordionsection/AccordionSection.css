@@ -10,7 +10,7 @@
 }
 .rules h2 {
   padding: 10px 15px;
-  background: rgb(255, 96, 96);
+  background: var(--main-color);
   border-radius: 5px;
   color: white;
   cursor: pointer;

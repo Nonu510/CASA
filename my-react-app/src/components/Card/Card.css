@@ -3,7 +3,7 @@
   height: 340px;
   border-radius: 10px;
   overflow: hidden;
-  background: rgb(255, 96, 96);
+  background: var(--main-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   flex-grow: 1;
@@ -11,7 +11,7 @@
 @media screen and (max-width: 768px) {
   .card {
     height: 255px;
-    width: 335px;
+    max-width: 100%;
   }
 }
 

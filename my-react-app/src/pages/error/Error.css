@@ -8,7 +8,7 @@
 .erreur h2 {
   font-size: 288px;
   font-weight: 700;
-  color: rgb(255, 96, 96);
+  color: var(--main-color);
   margin: 80px 0px;
 }
 @media screen and (max-width: 768px) {
@@ -19,7 +19,7 @@
 }
 .erreur p {
   font-size: 36px;
-  color: rgb(255, 96, 96);
+  color: var(--main-color);
   margin-top: 0;
 }
 @media screen and (max-width: 768px) {

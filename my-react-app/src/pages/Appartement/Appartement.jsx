@@ -3,6 +3,7 @@ import apartments from '../../assets/data/appartement.json';
 import { useParams, Navigate } from 'react-router-dom';
 import AccordionSection from '../../components/accordionsection/accordionSection';
 import StarRating from "../../components/Rating/StarRating";
+import Carousel from '../../components/carrousel/carrousel';
 
 function Appartement() {
     const { id } = useParams();
@@ -15,11 +16,8 @@ function Appartement() {
 
     return (
         <>
-            <div className='carousel'>
-                <img
-                    src={appartement.pictures[0]}
-                    alt={appartement.title}
-                />
+            <div className='carousel-container'>
+                <Carousel images={appartement.pictures} title={appartement.title} />
             </div>
 
             <section className="info-container">

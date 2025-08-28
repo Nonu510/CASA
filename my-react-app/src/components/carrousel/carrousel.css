@@ -1,0 +1,78 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+}
+.carousel .carousel-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 80px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-btn {
+    font-size: 24px;
+    padding: 10px 5px 10px 10px;
+  }
+}
+.carousel .prev {
+  left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .carousel .prev {
+    left: 2px;
+  }
+}
+.carousel .next {
+  right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .carousel .next {
+    right: 2px;
+  }
+}
+.carousel .carousel-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-counter {
+    font-size: 12px;
+  }
+}
+
+.carousel-btn svg {
+  width: auto;
+  height: 80px;
+}
+@media screen and (max-width: 768px) {
+  .carousel-btn svg {
+    height: 24px;
+  }
+}/*# sourceMappingURL=carrousel.css.map */
