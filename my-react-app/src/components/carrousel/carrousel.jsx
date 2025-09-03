@@ -16,20 +16,33 @@ const Carousel = ({ images, title }) => {
 
     if (!images || images.length === 0) return null;
 
+    const hasMultipleImages = images.length > 1;
+
     return (
         <div className='carousel'>
-            <button className='carousel-btn prev' onClick={prevSlide}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
+            {hasMultipleImages && (
+                <button className='carousel-btn prev' onClick={prevSlide}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+            )}
+
             <img
                 src={images[current]}
                 alt={`${title} - ${current + 1}`}
                 className='carousel-image'
             />
-            <button className='carousel-btn next' onClick={nextSlide}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-            <span className='carousel-counter'>{current + 1}/{images.length}</span>
+
+            {hasMultipleImages && (
+                <button className='carousel-btn next' onClick={nextSlide}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            )}
+
+            {hasMultipleImages && (
+                <span className='carousel-counter'>
+                    {current + 1}/{images.length}
+                </span>
+            )}
         </div>
     );
 };
